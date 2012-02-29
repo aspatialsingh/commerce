@@ -1,20 +1,16 @@
 source 'https://rubygems.org'
-
-gem 'rails', '3.2.1'
-gem 'haml-rails'
-gem 'haml'
-<<<<<<< HEAD
-gem 'bcrypt-ruby' 
-gem 'i18n-js', '2.1.2'
-=======
-gem 'formtastic'
-gem 'coffee-filter'
-gem 'therubyracer'
-gem 'activemerchant'
-
 gem 'bcrypt-ruby'
 gem 'foreigner'
->>>>>>> origin
+gem 'haml', '3.1.4'
+gem 'haml-rails', '0.3.4'
+gem 'formtastic', '2.0.2'
+gem 'therubyracer', '0.9.9'
+gem 'coffee-filter', '0.1.1'
+gem 'activemerchant', '1.20.3'
+gem 'i18n-js', '2.1.2'
+gem 'jquery-rails', '2.0.0'
+gem 'bcrypt-ruby', '3.0.1'
+gem 'foreigner'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
