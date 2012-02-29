@@ -1,6 +1,8 @@
 Commerce::Application.routes.draw do
   resources :users
   root :to => "users#index"
+  match "sign_in" => "sessions#sign_in"
+  match "sign_out" => "sessions#sign_out"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
