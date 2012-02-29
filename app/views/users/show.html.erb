@@ -1,25 +1,23 @@
-<p id="notice"><%= notice %></p>
+%p #notice= notice 
 
-<p>
-  <b>User name:</b>
-  <%= @user.user_name %>
-</p>
-
-<p>
-  <b>Password hash:</b>
-  <%= @user.password_hash %>
-</p>
-
-<p>
-  <b>Password salt:</b>
-  <%= @user.password_salt %>
-</p>
-
-<p>
-  <b>Role:</b>
-  <%= @user.role %>
-</p>
+%p
+  %b User name:
+    = @user.user_name 
+%p
+  %b Password hash:
+    = @user.password_hash 
 
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+%p
+  %b Password salt:
+    = @user.password_salt 
+
+
+%p
+  %b Role:
+    = @user.role 
+
+
+
+ = link_to 'Edit', edit_user_path(@user) 
+ = link_to 'Back', users_path 
