@@ -7,7 +7,7 @@ gem 'formtastic'
 gem 'coffee-filter'
 gem 'therubyracer'
 gem 'activemerchant'
-gem 'i18n-js'
+
 gem 'bcrypt-ruby'
 gem 'foreigner'
 
