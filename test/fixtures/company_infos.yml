@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  comp_name: MyString
+  comp_location: 
+  contect_number: 
+
+two:
+  comp_name: MyString
+  comp_location: 
+  contect_number: 

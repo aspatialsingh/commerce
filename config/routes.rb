@@ -1,6 +1,9 @@
 Commerce::Application.routes.draw do
   resources :users
-  root :to => "users#index"
+    root :to => "users#index"
+  resources :company_info
+  root :to => "company_info#index"
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

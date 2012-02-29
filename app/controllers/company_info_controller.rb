@@ -1,0 +1,2 @@
+class CompanyInfoController < ApplicationController
+end
