@@ -145,7 +145,11 @@ DEPENDENCIES
   formtastic
   haml
   haml-rails
+<<<<<<< HEAD
   i18n-js
+=======
+  i18n-js (= 2.1.2)
+>>>>>>> origin
   jquery-rails
   mysql2
   rails (= 3.2.1)
