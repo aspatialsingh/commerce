@@ -1,17 +1,7 @@
 source 'https://rubygems.org'
-<<<<<<< HEAD
+
 
 gem 'rails', '3.2.1'
-gem 'haml-rails'
-gem 'haml'
-gem 'formtastic'
-gem 'coffee-filter'
-gem 'therubyracer'
-gem 'activemerchant'
-gem 'i18n-js'
-=======
->>>>>>> origin
-gem 'bcrypt-ruby'
 gem 'foreigner'
 gem 'haml', '3.1.4'
 gem 'haml-rails', '0.3.4'
@@ -21,8 +11,8 @@ gem 'coffee-filter', '0.1.1'
 gem 'activemerchant', '1.20.3'
 gem 'i18n-js', '2.1.2'
 gem 'jquery-rails', '2.0.0'
-gem 'bcrypt-ruby', '3.0.1'
-gem 'foreigner'
+gem 'bcrypt-ruby', '3.0.1', :require=>"bcrypt"
+
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -40,7 +30,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

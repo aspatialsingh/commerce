@@ -1,15 +1,9 @@
 Commerce::Application.routes.draw do
   resources :users
-<<<<<<< HEAD
-    root :to => "users#index"
-  resources :company_info
-  root :to => "company_info#index"
-
-=======
-  root :to => "users#index"
-  match "sign_in" => "sessions#sign_in"
-  match "sign_out" => "sessions#sign_out"
->>>>>>> 26235efc6fbff55c46562f5da184d83cfd12bd80
+  root :to => "home#index"
+  match "sign_in" => "sessions#new"
+  match "sign_out" => "sessions#destroy"
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
