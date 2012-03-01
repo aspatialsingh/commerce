@@ -2,6 +2,14 @@ class User < ActiveRecord::Base
   attr_accessible :user_name,  :password, :password_confirm
   attr_accessor :password, :password_confirm
 
+  attr_accessor password
+
+  belongs_to :mailing_address, :foreign_key => "mailing_address_id", :class_name => "Address"
+
+  has_many rders
+  has_many ayment_profiles
+  has_many :auto_recharges
+
   before_save setup
    validates_presence_of :user_name, :password, :password_confirm
 
@@ -30,12 +38,8 @@ class User < ActiveRecord::Base
       nil
     end
   end
- private
-  def sponser_exists
-    if(self.sponser.present? && User.where(:user_name => self.sponser).count == 0)
-      errors.add(ponser, "sponser # not exists") # t("messages.user_sponser_not_exists")
-    end
+
+  def name
+    first_name+ " " +last_name
   end
-
 end
-

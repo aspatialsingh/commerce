@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-gem 'bcrypt-ruby'
 gem 'foreigner'
 gem 'haml', '3.1.4'
 gem 'haml-rails', '0.3.4'
@@ -8,7 +7,6 @@ gem 'therubyracer', '0.9.9'
 gem 'coffee-filter', '0.1.1'
 gem 'activemerchant', '1.20.3'
 gem 'i18n-js', '2.1.2'
-gem 'jquery-rails', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'foreigner'
 
