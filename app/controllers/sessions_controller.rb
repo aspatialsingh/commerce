@@ -1,11 +1,12 @@
 class SessionsController < ApplicationController
   
-  def sign_in
-    
+   def new
+    @title = "Signin"
   end
-  
-  def sign_out
-    
+
+  def create
   end
-  
+
+  def destroy
+  end
 end

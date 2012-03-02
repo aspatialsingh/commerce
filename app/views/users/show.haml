@@ -1,23 +1,15 @@
 %p #notice= notice 
-
 %p
   %b User name:
-    = @user.user_name 
+= @user.user_name 
 %p
   %b Password hash:
-    = @user.password_hash 
-
-
+= @user.password_hash 
 %p
   %b Password salt:
-    = @user.password_salt 
-
-
+= @user.password_salt 
 %p
   %b Role:
-    = @user.role 
-
-
-
- = link_to 'Edit', edit_user_path(@user) 
- = link_to 'Back', users_path 
+= @user.role 
+= link_to 'Edit', edit_user_path(@user) 
+= link_to 'Back', users_path 
