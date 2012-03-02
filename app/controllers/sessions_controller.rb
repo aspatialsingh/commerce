@@ -1,13 +1,20 @@
 class SessionsController < ApplicationController
-  
-   def new
-    @title = "Signin"
+  def index
+   
   end
+   
+ def new
+    @title = "Signin"
+    
+  end
+ def profile
+   @profile = "profile"
+ end
 
   def create
-     render 'new'
+    render "new"
   end
 
   def destroy
-  end
+ end    
 end

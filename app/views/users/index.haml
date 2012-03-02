@@ -8,7 +8,7 @@
     %th
     %th
     %th
- -@users.each do |user| 
+-@users.each do |user| 
   %tr
     %td= user.user_name 
     %td= user.password_hash
@@ -20,4 +20,4 @@
     %td= link_to 'Destroy', user, confirm: 'Are you sure?', method: :delete 
   %br
 = link_to 'New User', new_user_path 
-= link_to 'sign_in', users_path
+= link_to 'signin', signin_path
