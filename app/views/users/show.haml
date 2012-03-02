@@ -1,9 +1,13 @@
 %p #notice= notice 
-
 %p
   %b User name:
 = @user.user_name 
-
+%p
+  %b Password hash:
+= @user.password_hash 
+%p
+  %b Password salt:
+= @user.password_salt 
 %p
   %b Role:
 = @user.role 

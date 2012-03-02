@@ -32,6 +32,14 @@ class UsersController < ApplicationController
     end
   end
 
+def sign_in
+    @user = User.new
+
+    respond_to do |format|
+      format.html # sign_in.html.erb
+      format.json { render json: @user }
+    end
+  end
   # GET /users/1/edit
   def edit
     @user = User.find(params[:id])
