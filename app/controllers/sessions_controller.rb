@@ -1,11 +1,8 @@
 class SessionsController < ApplicationController
   
-  def sign_in
-    
+  def index
+   
   end
   
-  def sign_out
-    
-  end
   
 end

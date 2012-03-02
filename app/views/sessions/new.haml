@@ -1,0 +1,10 @@
+%h1 New user
+= form_for @session do |f|
+  %p
+    =f.label:user_name
+    =f.text_field:user_name
+  %p 
+    =f.label:password
+    =f.text_field:password
+  %p
+    =f.submit"submit"  

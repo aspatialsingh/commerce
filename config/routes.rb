@@ -1,7 +1,7 @@
 Commerce::Application.routes.draw do
   resources :users
   root :to => "home#index"
-  match "sign_in" => "sessions#new"
+  match "sign_in" => "sessions#sign_in"
   match "sign_out" => "sessions#destroy"
   
 
