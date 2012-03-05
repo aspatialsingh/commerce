@@ -1,20 +1,26 @@
 class SessionsController < ApplicationController
-  def index
-   
-  end
-   
+  
  def new
     @title = "Signin"
     
   end
- def profile
-   @profile = "profile"
- end
+  def Profile
+  end
 
   def create
-    render "new"
+    user = User.authenticate(params[:session][:email],params[:session][:password])
+    if user.nil?
+      flash.now[:error] = "Invalid email/password combination."
+      @title = 'Sign in'
+      render 'profile'
+    else
+      signin user
+      redirect_to user
+    end
   end
 
   def destroy
- end    
+    signout_path
+    redirect_to root_path
+  end
 end
