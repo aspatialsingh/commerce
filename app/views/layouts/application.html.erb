@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Commerce</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <title>Commerce</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <%if flash.present?
+      flash.each do |key, msg|%>
+      <div id="<%= key %>">
+        <p style="float:right;">
+          <%= link_to_function 'X', "Effect.Fade('#{key}')" %>
+        </p>
+        <p>
+          <%= msg %>
+        </p>
+        <div class="clear"></div>
+      </div>
+      <%end
+    end%>
+    <%= yield %>
+  </body>
 </html>
