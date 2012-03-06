@@ -8,9 +8,9 @@ class SessionsController < ApplicationController
         flash.now[:error] = "Invalid email/password combination."
       else
         if user.role == User::ROLES[:store]
-          redirect_to super_stores_path
+          redirect_to store_categories_path
         elsif  user.role == User::ROLES[:super]
-          #TODO:redirect to super dashboard
+          redirect_to super_stores_path
         else
           redirect_to profile_path
         end

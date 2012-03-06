@@ -1,4 +1,6 @@
 Commerce::Application.routes.draw do
+  get "categories/index"
+
   resources :users
 
   resources :sessions, :only => [:new, :create, :destroy]
@@ -6,6 +8,10 @@ Commerce::Application.routes.draw do
   
   namespace :super do
     resources :stores
+  end
+  
+  namespace :store do
+    resources :categories
   end
 
 
