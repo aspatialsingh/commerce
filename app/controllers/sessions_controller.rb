@@ -5,15 +5,13 @@ class SessionsController < ApplicationController
       user = User.authenticate(params[:session][:email],params[:session][:password])
       logger.debug user.inspect
       if user.blank?
-
         flash.now[:error] = "Invalid email/password combination."
       else
-
         if user.role == User::ROLES[:store]
-          #TODO: redirect to store dashboard
+          redirect_to super_stores_path
         elsif  user.role == User::ROLES[:super]
           #TODO:redirect to super dashboard
-          else
+        else
           redirect_to profile_path
         end
       end

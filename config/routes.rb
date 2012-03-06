@@ -3,11 +3,17 @@ Commerce::Application.routes.draw do
 
   resources :sessions, :only => [:new, :create, :destroy]
   root :to => "home#index"
+  
+  namespace :super do
+    resources :stores
+  end
+
 
   match '/signup',  :to => 'users#new'
   match '/signin',  :to => 'sessions#new'
   match '/signout', :to => 'sessions#destroy'
   match '/profile', :to => 'sessions#profile'
+   
 
 # The priority is based upon order of creation:
 # first created -> highest priority.

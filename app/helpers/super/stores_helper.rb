@@ -1,0 +1,2 @@
+module Super::StoresHelper
+end
