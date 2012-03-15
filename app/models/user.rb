@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   before_save :setup
   validates_presence_of :user_name, :password, :password_confirm
  
-  ROLES ={:super => "super", :admin => "admin", :store =>"store", :buyer =>"buyer"}
+  ROLES ={:super => "super",                                                                                      :store =>"store", :buyer =>"buyer"}
 
 
   def setup

@@ -1,0 +1,36 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @product.name
+%p
+  %b Category:
+  = @product.category
+%p
+  %b Sku:
+  = @product.sku
+%p
+  %b Description:
+  = @product.description
+%p
+  %b Text:
+  = @product.text
+%p
+  %b Cost price:
+  = @product.cost_price
+%p
+  %b Retail price:
+  = @product.retail_price
+%p
+  %b Sale price:
+  = @product.sale_price
+%p
+  %b Visible:
+  = @product.visible
+%p
+  %b Weight:
+  = @product.weight
+
+= link_to 'Edit', edit_product_path(@product)
+\|
+= link_to 'Back', products_path
